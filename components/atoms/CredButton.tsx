@@ -1,9 +1,7 @@
 import React from "react";
 
-interface CredButtonProps {
-  text: string;
-  onClick: () => void;
-}
+//* interface
+import { CredButtonProps } from "@/interface/interface";
 
 const CredButton: React.FC<CredButtonProps> = ({ text, onClick }) => {
   return (

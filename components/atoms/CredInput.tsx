@@ -1,13 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-interface CredInputProps {
-  type: string;
-  placeholder: string;
-  icon: string;
-  value: string | undefined;
-  onChange: (value: string) => void;
-}
+//* interface
+import { CredInputProps } from "@/interface/interface";
 
 const CredInput: React.FC<CredInputProps> = ({
   type,
