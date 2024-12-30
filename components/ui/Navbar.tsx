@@ -2,11 +2,9 @@
 
 import React from "react";
 import { Menu, Bell, Search } from "lucide-react";
-import { usePathname } from "next/navigation";
 import { Dropdown, Space } from "antd";
 import { CiLogout } from "react-icons/ci";
 import { IoChevronDownOutline } from "react-icons/io5";
-import { useRouter } from "next/router";
 
 const items = [
   {
@@ -30,8 +28,6 @@ interface NavbarProps {
 }
 
 const Navbar = ({ onMenuClick }: NavbarProps) => {
-  const router = usePathname();
-
   return (
     <div className="h-auto min-h-[72px] bg-white border-b border-gray-200 flex flex-col lg:flex-row lg:items-center justify-between px-4 lg:px-6 py-4 fixed top-0 right-0 left-0 lg:left-[240px] z-20 w-auto">
       <div className="flex items-center justify-between mb-4 lg:mb-0">

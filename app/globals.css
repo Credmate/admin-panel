@@ -7,12 +7,12 @@
   --foreground: #1C1C1C;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #1C1C1C;
-    --foreground: #ffffff;
+    --foreground: #1C1C1C;
   }
-}
+} */
 
 @font-face {
   font-family: "Gilroy";
