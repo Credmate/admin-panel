@@ -6,20 +6,16 @@ import { Popover, DatePicker } from "antd";
 import { Table, Dropdown } from "antd";
 import { MoreVertical } from "lucide-react";
 import type { ColumnsType } from "antd/es/table";
+import { useRouter } from "next/navigation";
 
-interface BorrowerData {
-  key: string;
-  borrower: string;
-  dateReported: string;
-  group: string;
-  warningStatus: string;
-  reportStatus: string;
-}
+//* interface
+import { BorrowerData } from "@/interface/interface";
 
 //* components
 import { BorrowerCard } from "@/components/ui/BorrowerCard";
 
 const Borrower = () => {
+  const router = useRouter();
   const [dateRange, setDateRange] = useState(null);
 
   const handleDateChange = (dates: any) => {
@@ -204,7 +200,7 @@ const Borrower = () => {
       ),
       dataIndex: "borrower",
       key: "borrower",
-      sorter: true,
+      // sorter: true,
     },
     {
       title: (
@@ -217,13 +213,13 @@ const Borrower = () => {
       key: "dateReported",
       render: (date) => (
         <div className="flex items-center gap-2">
-          <span className="text-gray-400">
+          <span className="text-[#B0B0B0]">
             <CalendarDays className="w-4 h-4" />
           </span>
           {date}
         </div>
       ),
-      sorter: true,
+      // sorter: true,
     },
     {
       title: (
@@ -234,7 +230,7 @@ const Borrower = () => {
       ),
       dataIndex: "group",
       key: "group",
-      sorter: true,
+      // sorter: true,
     },
     {
       title: (
@@ -260,7 +256,7 @@ const Borrower = () => {
           {status === "---" && <span>---</span>}
         </div>
       ),
-      sorter: true,
+      // sorter: true,
     },
     {
       title: (
@@ -295,7 +291,7 @@ const Borrower = () => {
           </span>
         );
       },
-      sorter: true,
+      // sorter: true,
     },
     {
       title: "Action",
@@ -305,10 +301,13 @@ const Borrower = () => {
           {
             key: "1",
             label: "View",
+            onClick: () => router.push(`/dashboard/borrower/${record.key}`),
           },
           {
             key: "2",
             label: "Resolve",
+            onClick: () =>
+              router.push(`/dashboard/borrower/${record.key}/resolve`),
           },
         ];
 

@@ -17,3 +17,16 @@ export interface CredInputProps {
   value: string | undefined;
   onChange: (value: string) => void;
 }
+
+export interface BorrowerData {
+  key: string;
+  borrower: string;
+  dateReported: string;
+  group: string;
+  warningStatus: string;
+  reportStatus: string;
+}
+
+export interface BackButtonProps {
+  onClick: () => void;
+}

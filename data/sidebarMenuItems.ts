@@ -13,5 +13,15 @@ export const menuItems: MenuItem[] = [
     label: "Fraud Prevention",
     path: "/dashboard/fraudprevention",
   },
+  {
+    icon: "/user.svg",
+    label: "User Management",
+    path: "/dashboard/usermanagement",
+  },
+  {
+    icon: "/verify.svg",
+    label: "Verify Payments",
+    path: "/dashboard/verifypayments",
+  },
   { icon: "/settings.svg", label: "Settings", path: "/dashboard/settings" },
 ];
