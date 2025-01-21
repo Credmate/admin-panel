@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Settings = () => {
   return (
-    <div>Settings</div>
-  )
-}
+    <div className="px-5 py-6">
+      <div className="mb-5 mt-3">
+        <h1 className="text-2xl font-semibold">Settings</h1>
+      </div>
 
-export default Settings
+      <div></div>
+    </div>
+  );
+};
+
+export default Settings;
