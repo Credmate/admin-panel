@@ -33,20 +33,20 @@ const MiscButton: React.FC<ButtonProps> = ({
 
   const variants: VariantStyles = {
     solid: {
-      primary: "bg-[#DBB432] hover:bg-[#C49665] text-white",
-      danger: "bg-red-500 hover:bg-red-600 text-white",
+      primary: "bg-[#B4245D] hover:bg-[#B4245D] text-white",
+      danger: "bg-[#B02828] hover:bg-red-600 text-white",
       warning: "bg-yellow-500 hover:bg-yellow-600 text-white",
-      success: "bg-green-500 hover:bg-green-600 text-white",
+      success: "bg-[#2EA52E] hover:bg-green-600 text-white",
     },
     outline: {
       primary:
-        "border-2 border-[#B4245D] text-[#B4245D] hover:bg-[#B4245D] hover:text-white",
+        "border border-[#B4245D] text-[#B4245D] hover:bg-[#B4245D] hover:text-white",
       danger:
-        "border-2 border-[#A2195E] text-[#A2195E] hover:bg-red-500 hover:text-white",
+        "border border-[#B02828] text-[#B02828] hover:bg-[#B02828] hover:text-white",
       warning:
-        "border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white",
+        "border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white",
       success:
-        "border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white",
+        "border border-[#2EA52E] text-[#2EA52E] hover:bg-[#2EA52E] hover:text-white",
     },
   };
 

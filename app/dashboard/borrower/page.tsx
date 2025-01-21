@@ -307,7 +307,7 @@ const Borrower = () => {
             key: "2",
             label: "Resolve",
             onClick: () =>
-              router.push(`/dashboard/borrower/${record.key}/resolve`),
+              router.push(`/dashboard/borrower/${record.key}`),
           },
         ];
 

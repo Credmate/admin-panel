@@ -27,6 +27,16 @@ export interface BorrowerData {
   reportStatus: string;
 }
 
+export interface UserData {
+  key: string;
+  name: string;
+  id: string;
+  aadhar_number: string;
+  pan_number: string;
+  plan: string;
+  status: string;
+}
+
 export interface BackButtonProps {
   onClick: () => void;
 }
