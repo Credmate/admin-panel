@@ -37,6 +37,17 @@ export interface UserData {
   status: string;
 }
 
+
+export interface PaymentsData {
+  key: string;
+  name: string;
+  id: string;
+  payment_id: string;
+  date: string;
+  payment: string;
+  status: string;
+}
+
 export interface BackButtonProps {
   onClick: () => void;
 }
